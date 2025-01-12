@@ -73,7 +73,7 @@ onMounted(() => {
   });
 });
 
-function handlePenClick(index: number, picture: unknown) {
+function handlePenClick(index: number, picture: any) {
   // Toggle the disabled state of the specific input
 
   inputDisabled.value[index] = !inputDisabled.value[index];
@@ -144,7 +144,7 @@ async function handleForm(index: number, picture: any) {
   }
 }
 
-const deletePicture = async (picture: unknown) => {
+const deletePicture = async (picture: any) => {
   const token = localStorage.getItem("token");
   try {
     const response = await axios.delete(
