@@ -82,7 +82,7 @@ function handlePenClick(index: number, picture: unknown) {
   }
 }
 
-async function handleForm(index: number, picture: unknown) {
+async function handleForm(index: number, picture: any) {
   const updatedName = allPictures.value[index].name;
   const id = picture.picture_id;
   const token = localStorage.getItem("token");
